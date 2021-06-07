@@ -3,7 +3,7 @@ import style from './LandingPageForVideo.module.css';
 import NavForVideoPage from '../../components/Nav/NavForVideoPage';
 import CardForVideo from '../../components/Card/CardForVideo';
 import axios from 'axios';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const LandingPageForVideo = () => {
     const [videoList, setVideoList] = useState([])
     useEffect(()=>{

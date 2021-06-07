@@ -8,7 +8,7 @@ import AddIcon from '@material-ui/icons/Add';
 import { Form, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',

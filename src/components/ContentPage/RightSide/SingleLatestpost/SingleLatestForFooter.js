@@ -42,7 +42,7 @@ const SingleLatestPost = (props) => {
                    
                 </div>
                 <div className={style.title}>
-                    <a style={{textDecoration:'none'}} href={`/post/${props.post.id}`}><h3>{props.post.title}</h3></a>
+                    <Link style={{textDecoration:'none'}} to={`/post/${props.post.id}`}><h3>{props.post.title}</h3></Link>
                 </div>
             </div>
         </li>

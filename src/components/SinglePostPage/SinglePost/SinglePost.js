@@ -57,11 +57,11 @@ const SinglePost = (props) => {
                 </div>
                 {props.articleNum && props.nowIndex &&
                     <div className={style.lastNext}>
-                        <button className={style.switchBtn}><a href={`/post/${props.previousPostId}`}><ArrowBackOutlinedIcon className={style.switchBtnIcon} /></a></button>
+                        <button className={style.switchBtn}><Link to={`/post/${props.previousPostId}`}><ArrowBackOutlinedIcon className={style.switchBtnIcon} /></Link></button>
                         <span className={style.nowPage}>{props.nowIndex}</span>
                         <span className={style.seperate}>/</span>
                         <span className={style.maximumPage}>{props.articleNum}</span>
-                        <button className={style.switchBtn}><a href={`/post/${props.nextPostId}`}><ArrowForwardOutlinedIcon className={style.switchBtnIcon} /></a></button>
+                        <button className={style.switchBtn}><Link to={`/post/${props.nextPostId}`}><ArrowForwardOutlinedIcon className={style.switchBtnIcon} /></Link></button>
 
                     </div>
                 }
@@ -75,7 +75,7 @@ const SinglePost = (props) => {
                         props.relatedPosts.map((data,index) => {
                             return (
                                 <div key={index} className={style.single}>
-                                    <a href={`/post/${data.id}`} className={style.singleTop}><img src={`http://localhost:5000/${handleFilePath(data.coverFilePath)}`} /></a>
+                                    <Link to={`/post/${data.id}`} className={style.singleTop}><img src={`http://localhost:5000/${handleFilePath(data.coverFilePath)}`} /></Link>
                                     <h3>{data.title}</h3>
                                     <div className={style.singleBottom}>
                                         <div className={style.singleTag}>

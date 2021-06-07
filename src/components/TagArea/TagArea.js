@@ -3,7 +3,7 @@ import style from './TagArea.module.css';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import {handlePinnedTag } from '../Public/calculation';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const TagArea = () => {
     const [tags, setTags] = useState(['All']);
     const [pinnedTag, setPinnedTag] = useState('All')

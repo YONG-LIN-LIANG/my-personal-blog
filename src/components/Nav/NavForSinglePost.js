@@ -57,8 +57,6 @@ const Nav = () => {
                         <div className={style.socialmediaForSinglePost}>
                             <Link className={style.socialmediaLink} to='#'><i className="fab fa-twitter"></i></Link>
                             <Link className={style.socialmediaLink} to='#'><i className="fab fa-facebook-f"></i></Link>
-
-
                         </div>
 
                     </nav>

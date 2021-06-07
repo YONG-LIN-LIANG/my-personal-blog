@@ -5,7 +5,7 @@ import Advertisement from './Advertisement/Advertisement';
 import SearchFilter from './SearchFilter/SearchFilter';
 import PopularTags from './PopularTags/PopularTags';
 import axios from 'axios';
-import {domain} from '../../../domain';
+import domain from '../../../domain';
 const RightSide = () => {
     const [recentPosts, setRecentPosts] = useState([]);
  

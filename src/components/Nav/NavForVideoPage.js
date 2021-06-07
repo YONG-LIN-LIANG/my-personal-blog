@@ -9,9 +9,9 @@ const Nav = () => {
     return (
         <div className={style.nav}>
             <div className={style.top}>
-                <a style={{textDecoration:'none'}} href='/' className={style.left}>
+                <Link style={{textDecoration:'none'}} to='/' className={style.left}>
                 <h2 style={{color:'#888', cursor:'pointer'}}>STEVEN</h2>
-                </a>
+                </Link>
 
                 <input type='checkbox' id='test' />
                 <label htmlFor='test'><MenuBtnForSinglePost className={style.menuBtnForSinglePost} /></label>
@@ -24,11 +24,11 @@ const Nav = () => {
                                 menu.map(item => {
                                     return (
                                         
-                                            <a key={item.id} style={{textDecoration:'none'}} className={style.singlePost} href={item.to}>
+                                            <Link key={item.id} style={{textDecoration:'none'}} className={style.singlePost} to={item.to}>
                                                 <li>
                                                 {item.name}
                                                 </li>
-                                            </a>
+                                            </Link>
                                         
                                     )
                                 })
@@ -56,7 +56,6 @@ const Nav = () => {
                         <div className={style.socialmediaForSinglePost}>
                             <Link className={style.socialmediaLink} to='#'><i className="fab fa-twitter"></i></Link>
                             <Link className={style.socialmediaLink} to='#'><i className="fab fa-facebook-f"></i></Link>
-
 
                         </div>
 

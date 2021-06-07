@@ -3,7 +3,7 @@ import './App.css';
 import MainPage from './pages/MainPage/MainPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import SinglePostPage from './pages/SinglePostPage/SinglePostPage';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {Switch, Route } from 'react-router-dom';
 import { ProtectedRoute, ProtectedRouteForLogin } from './pages/LoginPage/ProtectedRoute';
 import AuthApi from './pages/LoginPage/AuthApi';
 import Cookies from 'js-cookie';
@@ -31,7 +31,6 @@ function App() {
     <div className="App">
      
         <AuthApi.Provider value={{ isAuth, setIsAuth}}>
-        <Router>
           <ScrollToTop/>
           <Switch>
             <ProtectedRouteForLogin exact path='/login' component={LoginPage} isAuth={isAuth} />
@@ -43,8 +42,6 @@ function App() {
             <Route path='/recommendVideo/:id' component={DetailVideoPage}  />
             <Route path='/subscribedVideo' component={SubscriptionPageForVideo}  />
           </Switch>
-         
-        </Router>
       </AuthApi.Provider>
     
       

@@ -7,7 +7,7 @@ import QuillEditor from '../../components/Editor/QuillEditor';
 import NavForSinglePost from '../../components/Nav/NavForSinglePost';
 import Dropzone from 'react-dropzone';
 import AddIcon from '@material-ui/icons/Add';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const EditorPage = () => {
     const history = useHistory();
     const [title, setTitle] = useState('');
@@ -131,7 +131,7 @@ const EditorPage = () => {
             header: { 'content-type': 'multipart/form-data' }
         }
         formData.append('file', files[0])
-        axios.post('http://localhost:5000/blog/articleCover', formData, config)
+        axios.post(`${domain}/blog/articleCover`, formData, config)
             .then(res => {
                 if (res.data.success) {
                     setCoverFilePath([...coverFilePath, res.data.url])

@@ -4,7 +4,7 @@ import CommentModel from '../CommentModel/CommentModel';
 import dummyPic from '../CommentModel/logo192.png';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import axios from 'axios';
-import {domain} from '../../../domain';
+import domain from '../../../domain';
 import ReplyComment from './ReplyComment';
 const CommentAreaForVideo = (props) => {
    

@@ -3,7 +3,7 @@ import style from '../LandingPageForVideo/LandingPageForVideo.module.css';
 import NavForSinglePage from '../../components/Nav/NavForSinglePost';
 import CardForVideo from '../../components/Card/CardForVideo';
 import axios from 'axios';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const SubscriptionPageForVideo = () => {
     const [videoList, setVideoList] = useState([])
     const userFrom = parseInt(localStorage.getItem('loginUserId'));

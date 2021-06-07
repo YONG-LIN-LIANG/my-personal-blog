@@ -44,7 +44,7 @@ const SingleLatestPost = (props) => {
 
                 </div>
                 <div className={style.title}>
-                    {props.post && <a style={{ textDecoration: 'none' }} href={`/post/${props.post.id}`}><h3>{props.post.title.length>9 ?(props.post.title.slice(0,10)+'...'):(props.post.title)}</h3></a>}
+                    {props.post && <Link style={{ textDecoration: 'none' }} to={`/post/${props.post.id}`}><h3>{props.post.title.length>9 ?(props.post.title.slice(0,10)+'...'):(props.post.title)}</h3></Link>}
 
                 </div>
             </div>

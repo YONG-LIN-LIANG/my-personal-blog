@@ -2,12 +2,11 @@ import React, { useState} from 'react'
 import style from './LoginPage.module.css';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import {domain} from '../../domain';
+import domain from '../../domain';
 import Cookies from 'js-cookie';
 import AuthApi from '../LoginPage/AuthApi';
 import {randomNum} from '../../components/Public/calculation';
 const LoginPage = () => {
-
     const history = useHistory();
 
     const [authState, setAuthState] = useState('login');

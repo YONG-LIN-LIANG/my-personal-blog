@@ -10,7 +10,7 @@ import CommentAreaForVideo from '../../components/SinglePostPage/CommentArea/Com
 import Subscribe from '../../components/Public/Subscribe';
 import SideVideo from '../../components/SideVideo/SideVideo';
 import { set } from 'js-cookie';
-import {domain} from '../../domain';
+import domain from '../../domain';
 import LikeDislikeForVideo from '../../components/LikeDislike/LikeDislikeForVideo';
 const useStyles = makeStyles((theme) => ({
     avatar: {

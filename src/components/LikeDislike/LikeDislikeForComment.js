@@ -4,7 +4,7 @@ import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import ThumbDownAltOutlinedIcon from '@material-ui/icons/ThumbDownAltOutlined';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import axios from 'axios';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const LikeDislike = (props) => {
     const [liked, setLiked] = useState(false);
     const [disliked, setDisliked] = useState(false);

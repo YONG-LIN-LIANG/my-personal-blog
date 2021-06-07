@@ -8,7 +8,7 @@ import axios from 'axios';
 import {useDispatch, useSelector} from 'react-redux';
 import Footer from '../../components/Footer/Footer';
 import LoadingSpinner from '../../components/Public/LoadingSpinner';
-import {domain} from '../../domain';
+import domain from '../../domain';
 const SinglePostPage = (props) => {
  
     const [post, setPost] = useState('');

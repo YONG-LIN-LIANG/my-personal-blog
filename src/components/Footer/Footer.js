@@ -6,7 +6,7 @@ import SingleLatestForFooter from '../ContentPage/RightSide/SingleLatestpost/Sin
 import PopularTagsForFooter from '../ContentPage/RightSide/PopularTags/PopularTagsForFooter';
 import {useSelector} from 'react-redux';
 import AuthApi from '../../pages/LoginPage/AuthApi';
-import {domain} from '../../domain';
+import domain from '../../domain';
 import axios from 'axios';
 const Footer = () => {
     const [recentPosts, setRecentPosts] = useState([]);

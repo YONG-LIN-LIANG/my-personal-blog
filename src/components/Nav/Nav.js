@@ -12,9 +12,9 @@ const Nav = () => {
         <div className={style.nav}>
             <div className={style.top}>
                 <div className={style.left}>
-                    <a href='/' style={{textDecoration:'none'}}>
+                    <Link to='/' style={{textDecoration:'none'}}>
                     <h2 style={{color:'#fff', cursor:'pointer'}}>STEVEN</h2>
-                    </a>
+                    </Link>
                 </div>
 
                 <input type='checkbox' id='test' />
@@ -28,9 +28,9 @@ const Nav = () => {
                                 menu.map(item => {
                                     return (
                                         <li key={item.id}>
-                                            <a style={{textDecoration:'none'}} className={style.link} href={item.to}>
+                                            <Link style={{textDecoration:'none'}} className={style.link} to={item.to}>
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         </li>
                                     )
                                 })

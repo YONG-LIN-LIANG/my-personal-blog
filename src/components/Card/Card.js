@@ -6,6 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import LinkRoundedIcon from '@material-ui/icons/LinkRounded';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
+import domain from '../../domain';
 const Card = (props) => {
     const [writer, setWriter] = useState('');
     const [coverFilePath, setFilePath] = useState('');
@@ -18,7 +19,7 @@ const Card = (props) => {
         const variables = {
             writerId: props.post.writerId
         }
-        return axios.post('http://localhost:5000/blog/getWriter', variables)
+        return axios.post(`${domain}/blog/getWriter`, variables)
             .then(res => {
                 if (res.data.success) {
 
@@ -66,9 +67,9 @@ const Card = (props) => {
                 <div className={style.top}>
                     <img src={`http://localhost:5000/${coverFilePath}`} />
                     <div>
-                        <a className={style.linkUrl} href={`/post/${props.post.id}`}>
+                        <Link className={style.linkUrl} to={`/post/${props.post.id}`}>
                             <LinkRoundedIcon className={style.linkIcon} />
-                        </a>
+                        </Link>
                         <Link className={style.linkUrl}
                             to='#' >
                             <SearchIcon className={style.searchIcon} />
@@ -84,9 +85,9 @@ const Card = (props) => {
                             <Link style={{ textDecoration: 'none' }} to='#'><span>{moment(props.post.createdAt).format('MMMM DD, YYYY')}</span></Link>
                         </div>
 
-                        <a style={{ textDecoration: 'none' }} href={`/post/${props.post.id}`}>
+                        <Link style={{ textDecoration: 'none' }} to={`/post/${props.post.id}`}>
                             <div className={style.title}><h2>{props.post.title}</h2></div>
-                        </a>
+                        </Link>
                         <div className={style.content}><p dangerouslySetInnerHTML={{ __html: props.post.content }} /></div>
                     </div>
 
