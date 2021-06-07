@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import style from './PopularTags.module.css';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import {domain} from '../../domain';
+import {domain} from '../../../../domain';
 const PopularTags = () => {
     const [tags, setTags] = useState([]);
     useEffect(()=>{

@@ -4,7 +4,7 @@ import style from './AllPost.module.css';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import useRWD from '../../Public/useRWD';
-import {domain} from '../../domain';
+import {domain} from '../../../domain';
 const AllPost = () => {
     const device = useRWD();
     const [oddArticle, setOddArticle] = useState([]);

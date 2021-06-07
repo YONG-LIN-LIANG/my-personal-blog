@@ -6,7 +6,7 @@ import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import axios from 'axios';
 import {tillNow} from '../../Public/calculation';
 import LikeDislikeForComment from '../../LikeDislike/LikeDislikeForComment';
-import {domain} from '../../domain';
+import {domain} from '../../../domain';
 const CommentModel = (props) => {
     const [showReply, setShowReply] = useState(false);
     const [user, setUser] = useState('');

@@ -4,8 +4,9 @@ import "react-quill/dist/quill.snow.css";
 import hljs from "highlight.js";
 import "highlight.js/styles/github.css";
 import axios from 'axios';
-const __ISMSIE__ = navigator.userAgent.match(/Trident/i) ? true : false;
 import {domain} from '../../domain';
+const __ISMSIE__ = navigator.userAgent.match(/Trident/i) ? true : false;
+
 // Quill.register('modules/clipboard', PlainClipboard, true);
 
 const QuillClipboard = Quill.import('modules/clipboard');
@@ -338,7 +339,6 @@ class QuillEditor extends React.Component {
 
         if (e.currentTarget && e.currentTarget.files && e.currentTarget.files.length > 0) {
             const file = e.currentTarget.files[0];
-            console.log(file);
 
             let formData = new FormData();
             const config = {
