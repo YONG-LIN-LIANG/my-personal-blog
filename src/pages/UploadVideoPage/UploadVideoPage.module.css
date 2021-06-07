@@ -1,0 +1,26 @@
+.content{
+    margin-top: 130px;
+}
+
+.content h2{
+    font-size: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.uploadAndShow{
+    width: 100%;
+    display: flex;
+   
+}
+
+.optionArea{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 250px;
+}
+
+.thumbnail{
+    margin-left: 20px;
+}

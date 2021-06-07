@@ -1,0 +1,48 @@
+.allPost{
+    width: 75%;
+    display: flex;
+}
+
+.allPost .area1{
+    width: 50%;
+    height: 100%;
+}
+.allPost .area2{
+    width: 50%;
+    height: 100%;
+}
+
+@media only screen and (max-width:1024px){
+    .allPost{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .area1, .area2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+   
+}
+
+@media only screen and (max-width:830px){
+    .allPost{
+        width: 100%;
+        
+    }
+    .area3{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:500px){
+    .area3{
+        width: 100%;
+    }
+    
+   
+}

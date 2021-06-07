@@ -1,0 +1,351 @@
+.card{
+    vertical-align: auto;
+    width: 94%;
+    transition: .5s;
+    border: 1px solid #fff;
+    margin-right: 32px;
+    margin-bottom: 32px;
+  
+   
+    
+}
+
+
+
+.top{
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.top img{
+   display: block;
+   margin: auto;
+   transition: .5s;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+
+.top div{
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background:   #48c8e500;
+    font-size: 25px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.linkIcon, .searchIcon{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: rgb(255, 255, 255,0);
+    transition: .5s;
+    padding: 5px;
+    visibility: hidden;
+}
+.linkIcon{
+    transform:scale(3) rotate(40deg);
+    margin-left: 80px;
+}
+
+.searchIcon{
+    transform: scale(3) ;
+    margin-left: -80px;
+}
+
+
+.top div:hover {
+    background: #48c8e580 ;
+    
+}
+.top div:hover span{
+    color: rgba(255, 255, 255);
+}
+
+.linkUrl{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.linkUrl:hover .linkIcon, .linkUrl:hover .searchIcon {
+    background: rgba(255, 255, 255);
+    color: #444;
+    
+}
+.linkUrl:hover .linkIcon{
+    animation: ss .2s linear ;
+    
+}
+@keyframes ss{
+    0%{
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+    50%{
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    100%{
+        margin-top: 0;
+        margin-left: 80px;
+    }
+}
+.linkUrl:hover .searchIcon{
+    animation: yy .2s linear ;
+}
+ 
+@keyframes yy{
+    0%{
+        margin-top: 60px;
+        margin-left: -80px;
+    }
+    50%{
+        margin-top: 30px;
+        margin-left: -80px;
+    }
+    100%{
+        margin-top: 0;
+        margin-left: -80px;
+    }
+}
+.top:hover .linkIcon, .top:hover .searchIcon{
+    visibility: visible;
+}
+
+.top:hover img{
+    transform: scale(1.1);
+}
+
+
+.center{
+    padding: 0 50px;
+    margin-bottom: 25px;
+}
+
+.authorDate{
+    padding-top: 30px;
+    text-align: start;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.authorDate span{
+    color: #888;
+    transition: .3s;
+}
+.authorDate span:hover{
+    color: #444;
+}
+
+.authorDate > :first-child{
+    margin-right: 20px;
+}
+.center .title{
+    display: flex;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    font-size: 18px;
+    transition: .3s;
+}
+.center .title h2{
+    font-size: 2vw;
+}
+.center .title:hover{
+    color: #47c9e5;
+}
+.center .content{
+    text-align: start;
+    line-height: 25px;
+    color: #888;
+    font-family: 'Quattrocento Sans', sans-serif;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.bottom{
+    padding: 0 50px;
+    position: relative;
+}
+.comment{
+    width: 60px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding-top: 1px;
+    background: #eee;
+    position: absolute;
+    top: -17.5px;
+    right: 50px;
+    transition: .3s;
+}
+
+.comment:hover{
+    background: #47c9e5;
+}
+
+.comment i{
+    color: #888;
+    transition: .3s;
+}
+.comment span{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    color: #666;
+    transition: .3s;
+}
+.comment:hover i, .comment:hover span{
+    color: #fff;
+}
+
+.tags{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+.tags span{
+    color: #888;
+}
+
+.tags span:hover{
+    color: #444;
+}
+.tagLink + .tagLink:before{
+    content: ', ';
+}
+.bottom::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 1px;
+    background: #dddccc;
+}
+
+.shadow{
+    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 40px #ccc;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.card:hover .shadow{
+    box-shadow: none;
+    
+}
+.card:hover{
+    transform: translateY(5px);
+    border: 1px solid #eee;
+}
+
+@media only screen and (max-width:1024px){
+    .card{
+        /* width: 390px; */
+        width: 100%;
+        max-width: 95%;
+        margin-right: 0;
+
+    }
+}
+
+@media only screen and (max-width:767px){
+    .card{
+        width: 100%;
+        max-width: 91%;
+    }
+    .top{
+       
+        max-height: 400px;
+    }
+    .authorDate span{
+        font-size: 10px;
+    }
+    .bottom::before{
+        width: 150px;
+    }
+    .tags span{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:540px){
+    .top{
+      display: flex;
+      max-height: 400px;
+    }
+    .linkIcon, .searchIcon{
+        width: 30px;
+        height: 30px;
+    }
+    .linkIcon{
+        margin-left: 60px;
+    }
+    .searchIcon{
+        margin-left: -60px;
+    }
+    @keyframes ss{
+        0%{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+        50%{
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        100%{
+            margin-top: 0;
+            margin-left: 60px;
+        }
+    }
+    @keyframes yy{
+        0%{
+            margin-top: 60px;
+            margin-left: -60px;
+        }
+        50%{
+            margin-top: 30px;
+            margin-left: -60px;
+        }
+        100%{
+            margin-top: 0;
+            margin-left: -60px;
+        }
+    }
+   
+}
+
+@media only screen and (max-width:480px){
+    .card{
+        
+        width: 100%;
+    }
+    .bottom::before{
+        width: 160px;
+    }
+}

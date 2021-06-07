@@ -1,0 +1,143 @@
+.footer{
+    width: 100%;
+    margin-top: 120px;
+    background: #262626;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    color: #fff;
+}
+.footer > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 60px 100px;
+
+}
+
+.left, .center, .right{
+    width: 32%;
+}
+.left{
+    padding-right: 25px;
+    
+}
+.center{
+    flex: 35%;
+    padding-right: 25px;
+}
+
+.right{
+    flex: 32%;
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+}
+.logo h3{
+    text-align: left;
+}
+
+.content{
+    text-align: left;
+    line-height: 25px;
+    color: #ddd;
+    
+}
+
+.socialMedia{
+    width: 100%;
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start;
+}
+
+.link{
+    color: #fff;
+    margin-right: 30px;
+}
+
+.copyright{
+    background: #222222;
+    color: #ffffff;
+    height: 60px;
+}
+
+.top{
+    text-align: start;
+    padding-bottom: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #f5f7f4;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
+
+.items li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.items li+li{
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+
+.author{
+    font-weight: 700;
+}
+
+@media only screen and(max-width:1024px){
+    .left{
+        flex: 32%;
+    }
+    .center{
+        flex: 36%;
+    }
+    .right{
+        flex: 32%;
+    }
+}
+
+@media only screen and (max-width:942px){
+    .footer{
+        
+        height: 100%;
+    }
+    .left, .center, .right{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .center, .right{
+        padding-top: 0px;
+    }
+    .right{
+        margin-bottom: 150px;
+    }
+    .center{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width:900px){
+    .footer>div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .footer>div:nth-child(1){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

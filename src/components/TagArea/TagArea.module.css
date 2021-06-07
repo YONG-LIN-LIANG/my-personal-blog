@@ -1,0 +1,36 @@
+.tagArea {
+    width: 900px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.tagArea span {
+    padding: 5px 15px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    color: #999;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.tagArea span:hover {
+    background: #47c9e5;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .tagArea {
+        width: 100%;
+        padding: 60px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tagArea span{
+        margin: 10px 10px;
+    }
+}

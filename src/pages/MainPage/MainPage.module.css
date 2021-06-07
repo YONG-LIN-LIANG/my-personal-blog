@@ -1,0 +1,79 @@
+.container{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background: rgb(56, 144, 179);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+
+.banner > :nth-child(2){
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.mainContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .mainContent{
+        padding: 0 70px;
+        flex-flow: column wrap;
+    }
+    .banner{
+        height: 300px;
+        overflow: visible;
+    }
+    .banner img{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .mainContent{
+        padding: 0 70px;
+        flex-flow: column wrap;
+    }
+    .banner{
+        height: 200px;
+    }
+    
+}
+
+@media only screen and (max-width:540px){
+    .container{
+        width: 100%;
+        
+        
+    }
+    .banner{
+
+        height: 180px;
+    }
+    .mainContent{
+        padding: 0 0px;
+       
+    }
+}

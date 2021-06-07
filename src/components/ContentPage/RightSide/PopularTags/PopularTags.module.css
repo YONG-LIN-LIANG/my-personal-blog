@@ -1,0 +1,35 @@
+.popularTags{
+    margin-top: 70px;
+    
+}
+
+.title{
+    text-align: start;
+    font-size: 25px;
+    padding-bottom: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    padding: 8px 15px;
+    color: #888;
+    font-weight: 600;
+    background: #eee;
+    margin: 5px 10px 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.link:hover{
+    background:  #47c9e5;
+    color: #fff;
+}

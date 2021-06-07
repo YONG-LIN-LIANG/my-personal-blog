@@ -1,0 +1,23 @@
+.SinglePostPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    padding: 0 100px;
+}
+@media only screen and (max-width: 1320px) {
+    .content {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        padding: 0 80px;
+        align-items: center;
+    }
+}

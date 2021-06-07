@@ -1,0 +1,53 @@
+.rightSide{
+    width: 25%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.top{
+    text-align: start;
+    padding-bottom: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #555;
+    font-weight: 700;
+    font-size: 20px;
+}
+.top h3{
+    font-size: 20px;
+    font-weight: 750;
+    color: #444;
+}
+
+
+.items li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.items li+li{
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width:1071px){
+    .rightSide{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .rightSide{
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:830px){
+    .rightSide{
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+}
+
+

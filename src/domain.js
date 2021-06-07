@@ -1,0 +1,1 @@
+export const domain = 'https://mysql-deploy-firsttest.herokuapp.com';

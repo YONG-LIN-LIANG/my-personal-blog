@@ -1,0 +1,100 @@
+.commentModel{
+    display: flex;
+}
+.top{
+    display: flex;
+    height: 25px;
+    
+}
+.top h5{
+    font-size: 13px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+.top span{
+    font-size: 13px;
+    line-height: 25px;
+    color: #555;
+}
+.left{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.left img{
+    width: 100%;
+}
+
+.right{
+    width: 100%;
+}
+.center{
+    text-align: start;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom button:nth-child(2){
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+
+
+.handleReplyer{
+    position: relative;
+    width: 100%;
+
+}
+
+.replyer{
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+.replyer img{
+    width: 100%;
+}
+
+.textarea{
+    border: none;
+    border-bottom: 1px solid #888;
+    transform: translate(15px,-25px);
+    outline: none;
+    height: 80px;
+    font-size: 15px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+    width: 95%;
+}
+
+.cancelSubmit{
+    text-align: end;
+    transform: translateY(-22px);
+}
+.cancelSubmit button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.cancelSubmit button:nth-child(1){
+    background: #fff;
+}
+.cancelSubmit button:nth-child(2){
+    background: #47c9e5;
+    border-radius: 3px;
+    color: #fff;
+}

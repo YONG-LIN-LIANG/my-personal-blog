@@ -1,0 +1,52 @@
+.commentAreaForVideo h4{
+    text-align: start;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.commentAreaForVideo{
+    width: 100%;
+    padding-top: 15px;
+}
+.mainComment{
+    margin-top: 15px;
+    min-height: 50px;
+}
+.personalPic{
+    width: 40px;
+    height: 40px;
+}
+.personalPic img{
+    width: 100%;
+}
+
+.textarea{
+    border: none;
+    border-bottom: 1px solid #888;
+    transform: translate(20px,-35px);
+    outline: none;
+    height: 80px;
+    font-size: 15px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+    width: 93%;
+}
+
+.cancelSubmit{
+    text-align: end;
+    transform: translateY(-32px);
+}
+.cancelSubmit button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.cancelSubmit button:nth-child(1){
+    background: #fff;
+}
+.cancelSubmit button:nth-child(2){
+    background: #47c9e5;
+    border-radius: 3px;
+    color: #fff;
+}

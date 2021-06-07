@@ -1,0 +1,56 @@
+.singleRightVideo{
+    display: flex;
+    width: 100%;
+}
+
+.singleRightVideo + .singleRightVideo{
+    margin-top: 5px;
+}
+
+.left{
+    width: 100%;
+    max-width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.left img{
+    width: 100%;
+}
+.left span{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: #fff;
+    font-weight: 700;
+    padding: 1px 5px;
+    font-size: 10px;
+}
+.right{
+    text-align: start;
+    margin-left: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right h4{
+    font-size: 18px;
+    word-break: break-word;
+    line-height: 18px;
+}
+.right h5{
+    font-size: 15px;
+    transform: translateY(-6px);
+    color: #888;
+}
+
+.right h5:nth-child(3){
+    font-size: 15px;
+    transform: translateY(-12px);
+    color: #888;
+}

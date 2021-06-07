@@ -1,0 +1,26 @@
+.adArea{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    line-height: 400px;
+    background: #eee;
+    color: #bbb;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:1024px){
+    .adArea{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:540px){
+    .adArea{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .adArea{
+        width: 100%;
+    }
+}
